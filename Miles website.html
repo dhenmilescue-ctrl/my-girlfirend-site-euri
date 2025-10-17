@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Girlfriend</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: rgb(239, 133, 200);
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      padding: 40px;
+    }
+    section {
+      padding: 20px;
+    }
+    button {
+      background-color: white;
+      color: crimson;
+      border: none;
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: pink;
+    }
+    .message {
+      font-size: 18px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>💘 Meet My Girlfriend</h1>
+    <p>She's amazing, and here's why...</p>
+   
+  </header>
+
+  <section>
+    <h2>🌟 Her Qualities</h2>
+    <ul style="list-style: none; padding: 0;">
+      <li>✨ Kind and Thoughtful</li>
+      <li>🎨 Creative and Artistic</li>
+      <li>🎶 Loves food as much as I do</li>
+      <li>📚 Smart and Curious</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>💬 Interactive Zone</h2>
+    <button onclick="showMessage('She makes me laugh every day!')">Make Me Smile</button>
+    <button onclick="showMessage('She inspires me to be better.')">Make Me Think</button>
+    <button onclick="showMessage('She’s the best part of my day.')">Make Me Feel</button>
+    <button onclick="showMessage('She changed my life.')">Make Me Realize</button>
+    
+    <div class="message" id="output"></div>
+  </section>
+<button onclick="randomCompliment()">Surprise Me</button>
+<script>
+  const compliments = [
+    "Her smile lights up my world.",
+    "She’s my favorite person to talk to.",
+    "She makes even ordinary days feel magical.",
+    "She’s the melody in my silence."
+  ];
+  function randomCompliment() {
+    const index = Math.floor(Math.random() * compliments.length);
+    showMessage(compliments[index]);
+  }
+</script>
+  <section>
+    <h2>A simple paragraph for her</h2>
+    <p>I love everything about my girlfriend, She is the best thing that came to me, She’s the reason why i wanna do better that yesterday, She’s my life, my world, my heart and my everything. I love her so much<3</p>
+  </section>
+  <section>
+  <h2>💌 A Message Just for You</h2>
+  <p>Every line of this page is written with love. You’re not just my girlfriend—you’re my muse, my joy, and the reason I smile every day. I made this to remind you how deeply you’re cherished.</p>
+</section>
+
+  <footer style="padding: 20px;">
+    <p>Made with ❤️ by Miles</p>
+  </footer>
+
+  <script>
+    function showMessage(text) {
+      document.getElementById("output").innerText = text;
+    }
+  </script>
+
+</body>
+</html>
+
+<meta name="description" content="A sweet tribute to my amazing girlfriend.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:title" content="Meet My Girlfriend 💘">
+<meta property="og:description" content="She's kind, creative, and the best part of my life.">
+<meta property="og:type" content="website">
+
+<link rel="icon" href="https://emojiapi.dev/api/v1/2764.svg" type="image/svg+xml">
